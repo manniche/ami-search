@@ -106,13 +106,17 @@ case "$DISTRO" in
     DESC="Provided by Red Hat,"
     STDRET="ImageId, CreationDate, Name"
     ;;
-  ubuntu1604)
-    OWNER="099720109477"
-    DESC="Canonical, Ubuntu, 16.04 LTS, amd64"
-    ;;
   ubuntu1804)
     OWNER="099720109477"
     DESC="Canonical, Ubuntu, 18.04 LTS, amd64"
+    ;;
+  ubuntu1904)
+    OWNER="099720109477"
+    DESC="Canonical, Ubuntu, 19.04"
+    ;;
+  ubuntu1910)
+    OWNER="099720109477"
+    DESC="Canonical, Ubuntu, 19.10"
     ;;
   *)
     showusage
