@@ -132,7 +132,7 @@ SORT="reverse(sort_by(Images, &CreationDate))"
 # a certain Description will fail if even one result does not have
 # Description field. So we test that Description is not null before
 # doing the text match.
-TEST="[?Description != \`null\`] | [?starts_with(Description, \`$DESC\`)]"
+TEST="[?Description != \`null\`] | [?!contains(Description, \`UNSUPPORTED\`)] | [?starts_with(Description, \`$DESC\`)]"
 
 # By default, return 4 results. Can be overridden with -n option.
 NUM=${CLINUM:-4}
